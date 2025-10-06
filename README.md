@@ -1,9 +1,5 @@
-# Convolutional Neural Network (CNN) for [Project Name]
+# Convolutional Neural Network (CNN) for Development-of-a-Machine-learning-approach-to-estimate-lower-limb-joint-loading
 
-Professional, production-ready README for the repository containing training/inference code and saved artifacts for a CNN model.
-
-> Notes and assumptions
-> - This README is written based on the repository files present in the workspace (`CNN.py`, `CNN.txt`, `trained_model.h5`, `scalerX.save`, `scalerY.save`, and training visualizations). If the project uses a different script name or CLI, adjust commands accordingly.
 
 ## Table of contents
 
@@ -256,14 +252,22 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ## Contact & Acknowledgements
 
-- Author / Maintainer: [Your Name] — replace with your name and contact email in this section.
-- Acknowledgements: Add any datasets, libraries, or colleagues who helped with the project.
+- Author / Maintainer: Omar Shehab.
+- Supervised by: Dr.Nourhan Zayed
+## Dataset Acknowledgements
+```
+@article{CAMARGO2021110320,
+title = {A comprehensive, open-source dataset of lower limb biomechanics in multiple conditions of stairs, ramps, and level-ground ambulation and transitions},
+journal = {Journal of Biomechanics},
+pages = {110320},
+year = {2021},
+issn = {0021-9290},
+doi = {https://doi.org/10.1016/j.jbiomech.2021.110320},
+url = {https://www.sciencedirect.com/science/article/pii/S0021929021001007},
+author = {Jonathan Camargo and Aditya Ramanathan and Will Flanagan and Aaron Young},
+keywords = {Locomotion biomechanics, stairs, ramps, level-ground, treadmill, wearable sensors, open dataset},
+abstract = {We introduce a novel dataset containing 3-dimensional biomechanical and wearable sensor data from 22 able-bodied adults for multiple locomotion modes (level-ground/treadmill walking, stair ascent/descent, and ramp ascent/descent) and multiple terrain conditions of each mode (walking speed, stair height, and ramp inclination). In this paper, we present the data collection methods, explain the structure of the open dataset, and report the sensor data along with the kinematic and kinetic profiles of joint biomechanics as a function of the gait phase. This dataset offers a comprehensive source of locomotion information for the same set of subjects to motivate applications in locomotion recognition, developments in robotic assistive devices, and improvement of biomimetic controllers that better adapt to terrain conditions. With such a dataset, models for these applications can be either subject-dependent or subject-independent, allowing greater flexibility for researchers to advance the field.}
+}
+```  
 
----
 
-If you'd like, I can also:
-- Create a `requirements.txt` populated with the packages above.
-- Add a small `inference_example.py` file to the repo that uses the saved artifacts.
-- Open `CNN.py` to extract exact CLI/argument usage and embed exact run commands in this README (recommended for precision).
-
-If you want me to make any of these, tell me which and I'll add them now.
