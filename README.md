@@ -84,8 +84,7 @@ Minimum recommended Python ecosystem (adapt versions as needed):
 - joblib (for loading .save scalers)
 - h5py (for HDF5 model I/O; usually installed with TensorFlow)
 
-A sample `requirements.txt` you can create in the repo:
-
+A sample [requirements](https://github.com/Shehab2505/Development-of-a-Machine-learning-approach-to-estimate-lower-limb-joint-loading/blob/main/requirements.txt) you can create in the repo:
 ```
 tensorflow>=2.10
 scikit-learn
@@ -195,8 +194,8 @@ Add details from `CNN.txt` to this section if that file contains experiment logs
 
 Included plots:
 
-- `model loss over epochs.png` — training and validation loss across epochs.
-- `training and validation MSE.png` — training and validation mean squared error.
+- ![plot1] (./plot1.png) — training and validation loss across epochs.
+- ![plot2] (./plot2.png) — training and validation mean squared error.
 
 These help inspect training behavior (under/overfitting). When retraining, re-generate these plots in the same folder for comparison.
 
@@ -269,5 +268,6 @@ keywords = {Locomotion biomechanics, stairs, ramps, level-ground, treadmill, wea
 abstract = {We introduce a novel dataset containing 3-dimensional biomechanical and wearable sensor data from 22 able-bodied adults for multiple locomotion modes (level-ground/treadmill walking, stair ascent/descent, and ramp ascent/descent) and multiple terrain conditions of each mode (walking speed, stair height, and ramp inclination). In this paper, we present the data collection methods, explain the structure of the open dataset, and report the sensor data along with the kinematic and kinetic profiles of joint biomechanics as a function of the gait phase. This dataset offers a comprehensive source of locomotion information for the same set of subjects to motivate applications in locomotion recognition, developments in robotic assistive devices, and improvement of biomimetic controllers that better adapt to terrain conditions. With such a dataset, models for these applications can be either subject-dependent or subject-independent, allowing greater flexibility for researchers to advance the field.}
 }
 ```  
+
 
 
