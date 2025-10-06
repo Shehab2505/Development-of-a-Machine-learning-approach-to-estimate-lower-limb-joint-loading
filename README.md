@@ -40,19 +40,6 @@ Files in this repository (present in this workspace):
 - `model loss over epochs.png` — Plot of training & validation loss over epochs.
 - `training and validation MSE.png` — Plot of training/validation mean squared error over epochs.
 
-These images are included in the repository and are embedded below for quick reference.
-
-### Training visualizations
-
-Model loss over epochs:
-
-![Model loss over epochs](model loss over epochs.png)
-
-Training and validation MSE:
-
-![Training and validation MSE](training and validation MSE.png)
-
-If you add files, keep this list up to date.
 
 ## Quick start
 
@@ -105,8 +92,8 @@ Place that file next to `README.md` and run `pip install -r requirements.txt`.
 
 Windows PowerShell minimal commands:
 
-```powershell
-git clone <repo-url>
+```
+git clone https://github.com/Shehab2505/Development-of-a-Machine-learning-approach-to-estimate-lower-limb-joint-loading
 cd <repo-folder>
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -121,7 +108,7 @@ If you are on other platforms, use the corresponding activation commands.
 
 The repository includes a ready-to-use `trained_model.h5` and scalers. Here is a minimal example to load the model and run inference (Python):
 
-```python
+```
 # inference_example.py
 import joblib
 import numpy as np
@@ -150,7 +137,7 @@ print('Prediction (original scale):', pred)
 
 Run the example:
 
-```powershell
+```
 python inference_example.py
 ```
 
@@ -166,7 +153,7 @@ Notes:
 2. Adjust hyperparameters in `CNN.py` (or pass CLI args if the script supports them), such as epochs, batch size, learning rate.
 3. Run the training script:
 
-```powershell
+```
 python CNN.py
 ```
 
@@ -217,8 +204,7 @@ Add details from `CNN.txt` to this section if that file contains experiment logs
 
 Suggested quick smoke test (PowerShell):
 
-```powershell
-python - <<'PY'
+```
 import joblib
 from tensorflow.keras.models import load_model
 import numpy as np
@@ -230,7 +216,7 @@ scalerY = joblib.load('scalerY.save')
 dummy = np.zeros((1, scalerX.mean_.shape[0]))
 d = scalerX.transform(dummy)
 print('Model predict OK:', model.predict(d).shape)
-PY
+
 ```
 
 (Replace `scalerX.mean_` usage if scaler type differs.)
@@ -271,6 +257,7 @@ keywords = {Locomotion biomechanics, stairs, ramps, level-ground, treadmill, wea
 abstract = {We introduce a novel dataset containing 3-dimensional biomechanical and wearable sensor data from 22 able-bodied adults for multiple locomotion modes (level-ground/treadmill walking, stair ascent/descent, and ramp ascent/descent) and multiple terrain conditions of each mode (walking speed, stair height, and ramp inclination). In this paper, we present the data collection methods, explain the structure of the open dataset, and report the sensor data along with the kinematic and kinetic profiles of joint biomechanics as a function of the gait phase. This dataset offers a comprehensive source of locomotion information for the same set of subjects to motivate applications in locomotion recognition, developments in robotic assistive devices, and improvement of biomimetic controllers that better adapt to terrain conditions. With such a dataset, models for these applications can be either subject-dependent or subject-independent, allowing greater flexibility for researchers to advance the field.}
 }
 ```  
+
 
 
 
